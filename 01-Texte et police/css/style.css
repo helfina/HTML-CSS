@@ -1,0 +1,27 @@
+h1,h2{
+    text-align: center;
+}
+h1{
+    color: #a20000;
+    width: 500px; /*largeur*/
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 7px;
+    border: 3px solid #0554e5;
+    padding: 10px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+p, fieldset{
+    width: 800px;
+    margin:  0 auto;
+    padding: 20px;
+}
+span{
+    margin: 20px auto;
+}

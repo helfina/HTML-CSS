@@ -1,0 +1,26 @@
+h1,h2,a{
+    text-align: center;
+}
+h1{
+    color: #a20000;
+    width: 500px; /*largeur*/
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 7px;
+    border: 3px solid #0554e5;
+    padding: 10px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 30px;
+    margin: auto 10px;
+}
+
+p{
+    text-align: center;
+    width: 800px;
+    margin:  0 auto;
+    padding: 20px;
+    font-size: 20px;
+}
