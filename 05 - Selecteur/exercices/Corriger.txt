@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="description" content="cours html css"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Zeineb Bapin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Exercice</title>
+        <!-- lien vers le fichier css -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" sizes="16x16"/>
+    </head>
+    <body>
+        <div>
+            <section>
+                <p>Texte <span>1</span></p>
+                <p>Texte 2</p>
+                <p>Texte 3</p>
+                <p>Texte 4</p>
+                <p>Texte 5</p>
+            </section>
+            <article>
+                <p>Texte 6</p>
+                <p>Texte 7</p>
+                <p>Texte 8</p>
+                <p>Texte 9</p>
+                <p>Texte 10</p>
+            </article>
+            <p>Texte 10.5</p>
+        </div>
+        <div>
+            <section class="s1">
+                <p>Texte 11</p>
+                <p id="douze">Texte 12</p>
+                <p class="q2">Texte 13</p>
+                <p class="importante q2">Texte 14</p>
+                <p class="q2">Texte 15</p>
+            </section>
+            <section>
+                <p>Texte 16</p>
+                <p>Texte 17</p>
+                <p>Texte 18</p>
+                <p class="importante">Texte 19</p>
+                <p>Texte 20</p>
+            </section>
+            <strong class="importante">Je suis strong</strong>
+        </div>
+    </body>
+</html>
+
+
+___________________________________________________________
+
+/* Style de base */
+p, strong{
+    text-align: center;
+    font-size: 40px;
+}
+div{
+    margin: 40px;
+}
+
+/* EXERCICE */
+/* Ne pas utiliser les class et les id dans cette partie de l'exercice
+en appliquant color: ...;
+1- Mettre une couleur à tous les paragraphes
+*/
+p{
+    color: deeppink;
+}
+/*
+2- Ciblez uniquement les textes qui se trouvent dans la section */
+div>section>p{
+    color: deepskyblue;
+}
+/*
+3- Ciblez uniquement les textes qui se trouvent dans article
+*/
+article>p{
+    color: green;
+}
+/*
+4- Ciblez uniquement le texte 10.5 */
+div>p{
+    color: indigo;
+}
+
+/*
+5- ciblez le chiffre 1 qui se trouve dans le texte 1 */
+section>p>span{
+    color: lawngreen;
+}
+
+/*
+6- Ciblez les p de la section ET le texte 10.5
+*/
+
+div>section>p , div>p{
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+/* PARTIE 2
+Utilisez si vous le souhaitez des id et class
+7- Ciblez uniquement le texte 12
+8- Ciblez le texte 13 et le 15
+9- Donnez la class="importante" au texte 14 et 19
+10- Ciblez le texte 14 sans affecter le 19
+11- Ciblez les textes 13 14 et 15
+12- Ajouter la class importante à la balise strong, ciblez la en lui augmentant la taille de la police
+*/
+
+#douze{
+    color: blue;
+}
+
+.q2{
+    color: darkviolet;
+}
+
+body>div:nth-child(2)>section:nth-child(1)>p:nth-child(4){
+    color: darkgreen;
+}
+
+strong.importante{
+    display: block;
+    font-size: 54px;
+}

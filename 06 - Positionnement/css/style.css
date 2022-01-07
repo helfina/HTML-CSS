@@ -1,0 +1,22 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+section{
+    background-color: red;
+    width: 90%;
+    height: 300px;
+    margin: 100px auto;
+    display: flex;
+    /*  Pour gerer l'axe horizontal : */
+    justify-content: center;
+    /*  Pour gerer l'axe vertical :   */
+    align-items: center;
+
+    flex-direction: column;
+}

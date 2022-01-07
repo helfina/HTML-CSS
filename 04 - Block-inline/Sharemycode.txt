@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="description" content="cours html css"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Zeineb Bapin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Block-Inline</title>
+        <!-- lien vers le fichier reset.css -->
+        <link rel="stylesheet" href="css/reset.css"/>
+        <!-- lien vers le fichier css -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" sizes="16x16"/>
+    </head>
+    <body>
+        <header>Je suis le header</header>
+        <nav>Je suis la nav</nav>
+        <aside>Je suis aside</aside>
+        <section>Je suis une section</section>
+        <footer>Je suis le footer</footer>
+        <span>Je suis un span</span>
+        <em>Je suis em</em>
+        <strong>Je suis très très strong</strong>
+        <article>Je suis un article</article>
+        <i>Je suis en italique</i>
+        <b>Je suis en bold</b>
+        <a href="#">Je suis un lien qui ne mène nulle part</a>
+        <figure>Je suis une figure qui aime les images</figure>
+        <h1>Je suis le boss des titres</h1>
+        <!-- c'est tout...pour le moment... -->
+    </body>
+</html>
+
+
+_________________________________________________________________
+CSS
+__________________________________________________________________
+header, nav, aside, section, footer, span, em, i, b, a, article, h1, figure, strong{
+    border: 3px solid black;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+}

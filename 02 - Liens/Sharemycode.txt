@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="description" content="cours html css"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Zeineb Bapin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Liens</title>
+        <!-- lien vers le fichier css -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" sizes="16x16"/>
+    </head>
+    <body>
+        <!-- Titre -->
+        <h1>Mon super Site !</h1>
+        <!-- Un sous-titre -->
+        <h2>Exercice</h2>
+        <!-- Un paragraphe avec du faux texte -->
+        <p>
+            <a href="mapage.html" target="_blank">Je veux me rendre sur mon autre page.</a>
+            <hr>
+            <a href="https://www.apple.com/"><img src="images/favicon.jpg" alt="smiley souriant"></a>
+            <!--
+                - Créer un lien vers un nouveau fichier que vous appelerez mapage.html (mettez dans le body de mapage.html un titre h1 "ma page")
+                - Cette page (mapage.html) doit s'ouvrir dans un nouvel onglet
+                - Dans une balise footer, mettre un lien vers une adresse email (sur cette page)
+                - Mettre un lien externe vers le site de votre choix (sur cette page)
+             -->
+        </p>
+        <footer>
+            <!-- ici on va mettre un lien vers une adresse mail -->
+            <a href="mailto:zbapin@gmail.com">Me contacter</a>
+        </footer>
+    </body>
+</html>
+
+________________________________________________________________________
+MA PAGE
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Ma page</h1>
+    <a href="index.html">Retourner vers la page d'accueil</a>
+</body>
+</html>

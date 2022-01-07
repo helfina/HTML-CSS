@@ -1,0 +1,63 @@
+/* Style de base */
+p, strong{
+    text-align: center;
+}
+div{
+    margin: 40px;
+}
+
+/* EXERCICE */
+/* Ne pas utiliser les class et les id dans cette partie de l'exercice
+en appliquant color: ...;
+1- Mettre une couleur à tous les paragraphes
+2- Ciblez uniquement les textes qui se trouvent dans la section
+3- Ciblez uniquement les textes qui se trouvent dans article
+4- Ciblez uniquement le texte 10.5
+5- ciblez le chiffre 1 qui se trouve dans le texte 1
+6- Ciblez les p de la section ET le texte 10.5
+
+*/
+
+p{
+    color: #f05011;
+}
+section>p{
+    color: #a20000;
+}
+article>p{
+    color: #0554e5;
+}
+div>p{
+    color: #d82f2f;
+}
+div>section>p , div>p{
+    color: #02f9f9;
+
+}
+
+/* PARTIE 2
+Utilisez si vous le souhaitez des id et class
+7- Ciblez uniquement le texte 12
+8- Ciblez le texte 13 et le 15
+9- Donnez la class="importante" au texte 14 et 19
+10- Ciblez le texte 14 sans affecter le 19
+11- Ciblez les textes 13 14 et 15
+*/
+
+#douze{
+   background-color: black;
+    color: white;
+}
+
+.treize,.quinze{
+   font-weight: bold;
+    background-color: olivedrab;
+}
+
+.quatorze{
+    font-size: 50px;
+}
+
+.chiffre{
+    color: #7a0af9;
+}
