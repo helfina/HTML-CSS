@@ -1,0 +1,30 @@
+/* Donnez une hauteur et une couleur de fond aux balises:
+- header
+- nav (doit etre moins haute que le header)
+- section
+- footer
+rappel de la syntaxe CSS:
+- le selecteur (balise ciblée)
+- les accolades qui ouvrent les instructions
+- la propriété que l'on souhaite appliquer (en anglais)
+- la valeur (en anglais)
+- le point virgule pour finaliser l'instruction
+*/
+
+header,footer{
+    background-color: #f60303;
+    height: 200px;
+    margin: 20px 10px;
+}
+
+nav{
+    background-color: #f05011;
+    height: 100px;
+    margin: 20px 10px;
+}
+
+section{
+    background-color: #ffc800;
+    height: 500px;
+    margin: 20px 10px;
+}

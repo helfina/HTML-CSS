@@ -1,0 +1,58 @@
+/* On peut cibler un élément par le nom de la balise */
+div{
+    height: 200px;
+    /* background-color: pink; */
+}
+/* Ici toutes les balises div seront ciblées.
+Si je souhaite cibler uniquement la première div:
+*/
+header>div:last-child{
+    background-color: rgb(31, 32, 26);
+}
+/* cibler la div qui se trouve dans la 2eme div de la section */
+/* main>section>div:nth-child(2)>div{
+    background-color: cyan;
+} */
+
+/* Pour cibler les éléments pairs du footer */
+footer>div:nth-child(even){
+    background-color: darkseagreen;
+}
+/* Pour cibler les éléments impairs du footer */
+footer>div:nth-child(odd){
+    background-color: rgb(189, 157, 15);
+}
+
+/* Commentez les lignes qui colorent les div pour comprendre la suite */
+
+main{
+    height: 500px;
+}
+/* Si mon chemin est precis */
+main>section{
+    background-color: red;
+    height: 200px;
+}
+/* ma section  */
+section {
+    background-color: yellow;
+    height: 200px;
+}
+
+#toto{
+    height: 150px;
+    background-color: papayawhip;
+}
+.plop{
+    height: 150px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+}
+.lolo{
+    background-color: #f05011;
+}
+
+section .deuxieme{
+    font-size: 50px;
+}

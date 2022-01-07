@@ -1,0 +1,16 @@
+header,nav,aside,section,footer,span,em,strong,article,i,b,a,figure,h1{
+    border: 3px solid black;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin: 30px;
+}
+
+header{
+    width: 200px;
+    text-align: center;
+    margin: 0 auto; /* permet de centrer sur la page*/
+}
+a{
+    display: block; /* force la balise a a etre de type block ellle est inline par default*/
+}
