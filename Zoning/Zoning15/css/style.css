@@ -1,4 +1,4 @@
-body, header, nav, main, footer,section {
+body, header, nav, main, footer, section {
     border: 2px solid black;
     box-sizing: border-box;
     color: white;
@@ -29,7 +29,7 @@ main {
     align-content: space-between;
 }
 
-section{
+section {
     width: 25%;
     height: 50%;
 }
