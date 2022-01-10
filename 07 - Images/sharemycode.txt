@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="description" content="cours html css"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Zeineb Bapin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Images</title>
+        <!-- lien vers le fichier css -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" sizes="16x16"/>
+    </head>
+    <body>
+        <!-- Titre -->
+        <h1>Importer des images en html</h1>
+        <figure class="premiere">
+            <img src="images/image1.jpg" alt="paysage de falaise avec plage bleu turquoise" title="paysage"/>
+            <figcaption>
+                <a href="#">Légende cliquable 1</a>
+            </figcaption>
+        </figure>
+        <figure class="deuxieme">
+            <img src="images/image2.jpg" alt="paysage de chine, petit pont coupant un champ" title="paysage vert"/>
+            <figcaption>
+                <a href="#">Légende cliquable 2</a>
+            </figcaption>
+        </figure>
+        <figure class="troisieme">
+            <img src="images/image3.jpg" alt="petit singe qui fait dodo" title="petit singe"/>
+            <figcaption>
+                <a href="#">Légende cliquable 3</a>
+            </figcaption>
+        </figure>
+        <figure class="quatrieme">
+            <img src="images/image4.jpg" alt="petit chaton gris trop mignon avec des yeux attendrissants" title="petit chat"/>
+            <figcaption>
+                <a href="#">Légende cliquable 4</a>
+            </figcaption>
+        </figure>
+    </body>
+</html>
+__________________________________________________________________________________________________________________________
+h1{
+    font-size: 26px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: salmon;
+    margin: 10px 0;
+}
+
+figure{
+    margin: 50px;
+    width: 600px;
+    overflow: hidden;
+}
+
+figure figcaption{
+    width: 600px;
+    text-align: center;
+    z-index: 1000;
+    background-color: grey;
+}
+
+figure figcaption a{
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+/* Amusons nous */
+/* Agrandir une image au survol de la souris */
+.premiere{
+    transition: 0.2s;
+    transform: scale(1);
+}
+.premiere:hover{
+    transform: scale(1.2);
+}
+
+/* En utilisant margin-left, faites en sorte qu'au survol, l'image se décale de la gauche de 70px*/
+.deuxieme:hover{
+    margin-left: 70px;
+    transition-duration: 0.2s;
+}
+
+/* Au survol, faites remonter l'image (translateY)*/
+.troisieme{
+    transition: 0.2s;
+}
+.troisieme:hover{
+    transform:translateY(-10%);
+}
+
+/* Pour la dernière, au survol, faites une rotation à 360° */
+.quatrieme{
+    transition: 1.5s;
+}
+.quatrieme:hover{
+    transform: rotate(1turn);
+}

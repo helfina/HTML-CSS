@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="description" content="cours html css"/>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Zeineb Bapin" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Test</title>
+        <!-- lien vers le fichier css -->
+        <link rel="stylesheet" href="css/style.css"/>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" sizes="16x16"/>
+    </head>
+    <body>
+        <div class="container">
+            <header>Je suis le Header</header>
+            <nav>Je suis la nav</nav>
+            <section>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </section>
+            <footer>Je suis le footer</footer>
+        </div>
+    </body>
+</html>
+
+
+
+.container{
+    width: 960px;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+header, footer{
+    height: 80px;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    line-height: 80px;
+}
+nav{
+    height: 50px;
+    background-color: red;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section>div{
+    height: 240px;
+    width: 240px;
+    background-color: rosybrown;
+    border: 1px solid black;
+    line-height: 240px;
+    text-align: center;
+}
