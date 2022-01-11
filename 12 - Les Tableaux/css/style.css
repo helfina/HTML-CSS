@@ -1,0 +1,22 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th,td{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th{
+    background-color: violet;
+}

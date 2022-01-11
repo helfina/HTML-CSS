@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Free Web tutorials"><!--description de la page-->
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript"> <!--Mot clef de la page-->
+        <meta name="author" content="Zeineb Bapin"><!--Auteur du site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Absolute et Relatives</title>
+        <link rel="icon" href="images/smiley-tire-la-langue-2.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+        <div class="grandpere">
+            <div class="papa">
+                <div class="enfant">
+                    Je suis un enfant
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+----------------------
+CSS
+
+.grandpere{
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: relative;
+}
+
+.papa{
+    width: 600px;
+    height: 600px;
+    background-color: coral;
+    border: 2px solid black;
+}
+
+.enfant{
+    width: 250px;
+    height: 250px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

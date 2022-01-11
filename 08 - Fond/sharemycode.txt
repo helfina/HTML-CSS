@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Free Web tutorials"><!--description de la page-->
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript"> <!--Mot clef de la page-->
+        <meta name="author" content="Zeineb Bapin"><!--Auteur du site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Base d'une page</title>
+        <link rel="icon" href="images/smiley-tire-la-langue-2.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+        <div class="contenu">
+            <p>Du texte...</p>
+        </div>
+    </body>
+</html>
+
+
+/* On place une image de fond qui va prendre toute la place */
+body{
+    background-image: url(../images/image1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.contenu{
+    background-color: rgba(127, 255, 212, 0.693);
+    width: 600px;
+    height: 400px;
+    margin: 200px auto 0 auto;
+    padding: 10px;
+}

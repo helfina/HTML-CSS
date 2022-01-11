@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Free Web tutorials"><!--description de la page-->
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript"> <!--Mot clef de la page-->
+        <meta name="author" content="Zeineb Bapin"><!--Auteur du site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listes</title>
+        <link rel="icon" href="images/smiley-tire-la-langue-2.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="css/style.css" /> 
+        
+    </head>
+    <body>
+        <h1>Les listes</h1>
+        <h2>Il existe deux types de liste</h2>
+        <p>Les listes Ordonnées et les listes Non-ordonnées</p>
+        <hr>
+        <ol> <!-- Liste ordonnée : début de la liste -->
+            <li>Introduction</li> <!-- élément de la liste -->
+            <li>Développement</li>
+            <li>Conclusion</li>
+        </ol>
+        <hr> <!-- Trait de séparation -->
+        <ul> <!-- Liste Non ordonnée : début de la liste -->
+            <li>France</li> <!-- élement de la liste -->
+            <li>Italie</li>
+            <li>Vietnam</li>
+        </ul>
+
+        <hr>
+        <h3>On peut avoir une liste dans une liste : elles peuvent s'imbriquer</h3>
+        <ul>
+            <li>Fruits
+                <ul>
+                    <li>Pomme</li>
+                    <li>Cassis</li>
+                    <li>Framboise</li>
+                    <li>Citron</li>
+                </ul>
+            </li>
+            <li>Légumes
+                <ul>
+                    <li>Haricot</li>
+                    <li>Chou</li>
+                    <li>Panais</li>
+                    <li>Courgette</li>
+                </ul>
+            </li>
+        </ul>
+
+    </body>
+</html>
+-----------------------------------------------------------
+
+ul, ol{
+    list-style: none;
+}

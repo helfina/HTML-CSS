@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Free Web tutorials"><!--description de la page-->
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript"> <!--Mot clef de la page-->
+        <meta name="author" content="Zeineb Bapin"><!--Auteur du site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire</title>
+        <link rel="icon" href="images/smiley-tire-la-langue-2.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <h1>Les formulaires</h1>
+        <!-- Pour commencer un formulaire il est obligatoire d'utiliser la balise FORM -->
+        <form method="GET" action="">
+            <!-- Label et input  -->
+            <label for="prenom">Prénom</label><br> <!-- Titre du champ -->
+            <input type="text" required id="prenom" name="prenom" /> <br> <!-- Champ à remplir -->
+            <!-- l'id va etre utile pour le css / name va etre utile pour le php qui viendra récupérer les informations -->
+
+            <label for="nom">Nom</label> <br>
+            <input type="text" name="nom" id="nom" required placeholder="Votre nom" /> <br>
+
+            <!-- Pour un mot de passe -->
+            <label for="mdp">Mot de passe</label><br>
+            <input type="password" required name="mdp" id="mdp" /><br>
+
+            <!-- Pour un email -->
+            <label for="email">Email</label><br>
+            <input type="email" required name="email" id="email" /><br>
+
+            <!-- Pour de grandes zones de texte -->
+            <label for="message">Votre message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea> <br>
+
+            <!-- Boutons radio -->
+            <label> <u>Humeur</u> </label>
+            <div class="center">
+                <span>Bonne</span>
+                <input type="radio" name="bonne" id="bonne" value="bonne" /><br>
+            </div>
+            <div class="center">
+                <span>Bad</span>
+                <input type="radio" name="bad" id="bad" value="bad" /><br>
+            </div>
+
+            <!-- Checkbox ou cases à cocher -->
+            <label>Quels sont vos fruits préférés ?</label>
+            <div class="center">
+                <span>Pomme</span>
+                <input type="checkbox" name="pomme" id="pomme" value="pomme" /><br>
+            </div>
+            <div class="center">
+                <span>Melon</span>
+                <input type="checkbox" name="melon" id="melon" value="melon" /><br>
+            </div>
+            <div class="center">
+                <span>Fraise</span>
+                <input type="checkbox" name="fraise" id="fraise" value="fraise" /><br>
+            </div>
+            <div class="center">
+                <span>Banane</span>
+                <input type="checkbox" name="banane" id="banane" value="banane" /><br>
+            </div>
+
+            <!-- Liste déroulante -->
+            <label for="pays">Votre pays</label><br>
+            <select name="pays" id="pays">
+                <option value="fr">France</option>
+                <option value="us">Etats-Unis</option>
+                <option value="ru">Russie</option>
+                <option value="it">Italie</option>
+                <option value="de">Allemagne</option>
+            </select>
+            <hr>
+
+            <!-- Insertion d'images -->
+            <label for="photo">Photo</label><br>
+            <input type="file" name="avatar" id="avatar" /><br>
+
+            <!-- Validation du formulaire -->
+            <input type="submit" />
+        </form>
+    </body>
+</html>
+--------------------------------__---------___---_---------___
+CSS
+h1{
+    text-align: center;
+    padding: 20px;
+}
+form{
+    width: 80%;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+form>label,
+form>input[type="text"],
+form>input[type="email"],
+form>input[type="password"],
+form>input[type="file"],
+form>textarea,
+form select {
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+    padding: 15px;
+    font-size: 19px;
+}
+
+form>label{
+    width: 90%;
+    padding: 5px;
+}
+
+.center{
+    text-align: center;
+}
+
+form>input[type="submit"]{
+    width: 20%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- balises meta -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gaelle kerforne "> <!-- pour dire qui a créé la page -->
+        <meta name="description" content="cours html-css">
+
+        <!-- favicon pour le title-->
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" sizes="16x16">
+        <title>Cours HTML/CSS - Les Tableau</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+    <section id="container">
+        <table border="1"> <!-- Balise pour les tableaux -->
+            <tr><!-- table row : créer une nouvelle ligne -->
+                <th>Matière de l'intervenant</th> <!-- table heading : créer une cellule de titre-->
+                <th>Prenom</th>
+                <th>Nom</th>
+                <th>Note</th>
+            </tr>
+            <tr>
+                <td>Html</td> <!-- Ajoute une cellule simple-->
+                <td rowspan="2">Zeineb</td>
+                <td rowspan="2">Bapin</td>
+                <td>15/20</td>
+            </tr>
+            <tr>
+                <td>Ui-UX</td>
+                <td>17/20</td>
+            </tr>
+            <tr>
+                <td>Javascript</td> <!-- Ajoute une cellule simple-->
+                <td>Sonia</td>
+                <td>Baibou</td>
+                <td>19/20</td>
+            </tr>
+            <tr>
+                <td>Php</td> <!-- Ajoute une cellule simple-->
+                <td>Mathieu</td>
+                <td>Quittard</td>
+                <td>20/20</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <table border="1">
+            <tr>
+                <th>Matière de l'intervenant</th>
+                <td>html</td>
+                <td>Ux-UI design</td>
+                <td>Javascript</td>
+                <td>php</td>
+            </tr>
+            <tr>
+                <th>Prénom</th>
+                <td colspan="2">Zeineb</td>
+                <td>Sonia</td>
+                <td>Mathieu</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td colspan="2">Bapin</td>
+                <td>Baibou</td>
+                <td>Quittard</td>
+            </tr>
+            <tr>
+                <th>Note</th>
+                <td>15/20</td>
+                <td>17/20</td>
+                <td>19/20</td>
+                <td>20/20</td>
+            </tr>
+        </table>
+    </section>
+    </body>
+</html>
+

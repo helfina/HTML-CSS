@@ -1,0 +1,15 @@
+/*on place une image de fond qui va prendre toute la place */
+body{
+    background-image: url("../images/girlBinary.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.contenu{
+    background-color: rgba(29, 203, 236, 0.69);
+    width: 600px;
+    height: 400px;
+    margin: 200px auto 0 auto;
+    padding: 10px;
+}

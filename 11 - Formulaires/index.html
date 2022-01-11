@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- balises meta -->
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gaelle kerforne "> <!-- pour dire qui a créé la page -->
+        <meta name="description" content="cours html-css">
+
+        <!-- favicon pour le title-->
+        <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" sizes="16x16">
+        <title>Cours HTML/CSS - Formulaire </title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+
+        <h1>
+            <a href="#envoieForm"> <!-- Ancre pour descendre au submit du formulaire-->
+            Les formulaires
+            </a>
+        </h1>
+
+    <!-- Pour commencer un formulaire il est obligatoire d'utiliser la balise FORM -->
+    <form method="GET" action="">
+        <!-- Label et input  -->
+        <label for="prenom">Prénom</label><br> <!-- Titre du champ -->
+        <input type="text" required id="prenom" name="prenom" /> <br> <!-- Champ à remplir -->
+        <!-- l'id va etre utile pour le css / name va etre utile pour le php qui viendra récupérer les informations -->
+
+        <label for="nom">Nom</label> <br>
+        <input type="text" name="nom" id="nom" required placeholder="Votre nom" /> <br>
+
+        <!-- Pour un mot de passe -->
+        <label for="mdp">Mot de passe</label><br>
+        <input type="password" name="mdp" id="mdp" /><br>
+
+        <!-- Pour un email -->
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" /><br>
+
+        <!-- Pour de grandes zones de texte -->
+        <label for="message">Votre message</label><br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea> <br>
+
+        <!-- Boutons radio -->
+        <label> <u>Humeur</u> </label>
+        <div class="center">
+            <span>Bonne</span>
+            <input type="radio" name="bonne" id="bonne" value="bonne" /><br>
+        </div>
+        <div class="center">
+            <span>Bad</span>
+            <input type="radio" name="bad" id="bad" value="bad" /><br>
+        </div>
+
+        <!-- Checkbox ou cases à cocher -->
+        <label>Quels sont vos fruits préférés ?</label>
+        <div class="center">
+            <span>Pomme</span>
+            <input type="checkbox" name="pomme" id="pomme" value="pomme" /><br>
+        </div>
+        <div class="center">
+            <span>Melon</span>
+            <input type="checkbox" name="melon" id="melon" value="melon" /><br>
+        </div>
+        <div class="center">
+            <span>Fraise</span>
+            <input type="checkbox" name="fraise" id="fraise" value="fraise" /><br>
+        </div>
+        <div class="center">
+            <span>Banane</span>
+            <input type="checkbox" name="banane" id="banane" value="banane" /><br>
+        </div>
+
+        <!-- Liste déroulante -->
+        <label for="pays">Votre pays</label>
+        <select name="pays" id="pays">
+            <option value="fr">France</option>
+            <option value="us">Etat-Unis</option>
+            <option value="ru">Russie</option>
+            <option value="it">Italie</option>
+            <option value="de">Allemagne</option>
+        </select>
+
+        <!-- Insertion d'images -->
+        <label for="photo">Photo</label>
+        <input type="file" name="avatar" id="avatar"><br>
+
+        <!--        <label for="cv">Mon C.V</label>-->
+        <!--        <a href="images/favicon.jpg" download="images/favicon.jpg">Telecharger</a>-->
+
+        <!-- Validation du formulaire -->
+
+            <input type="submit" id="envoieForm" />
+
+    </form>
+
+    <!-- Lorsque je clique sur le H1, je veux que cela me fasse descendre au bouton submit (lien a / id) -->
+    </body>
+</html>
+

@@ -1,0 +1,22 @@
+.grandPere{
+    width: 800px;
+    height: 800px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    position: relative;
+}
+.papa{
+    width: 600px;
+    height: 600px;
+    background-color: coral;
+    border: 2px solid black;
+}
+
+.enfant{
+    width: 250px;
+    height: 250px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    position: absolute;
+    /*transform: translateX(50%);*/
+}

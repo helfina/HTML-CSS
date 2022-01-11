@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Free Web tutorials"><!--description de la page-->
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript"> <!--Mot clef de la page-->
+        <meta name="author" content="Zeineb Bapin"><!--Auteur du site-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tableaux</title>
+        <link rel="icon" href="images/smiley-tire-la-langue-2.jpg" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+       <section id="container">
+           <table border="1"> <!-- Balise pour les tableaux -->
+                <tr><!-- table row : créer une nouvelle ligne -->
+                    <th>Matière de l'intervenant</th> <!-- table heading : créer une cellule de titre-->
+                    <th>Prenom</th>
+                    <th>Nom</th>
+                    <th>Note</th>
+                </tr>
+                <tr>
+                    <td>Html</td> <!-- Ajoute une cellule simple-->
+                    <td rowspan="2">Zeineb</td>
+                    <td rowspan="2">Bapin</td>
+                    <td>15/20</td>
+                </tr>
+                <tr>
+                    <td>Ui-UX</td>
+                    <td>17/20</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td> <!-- Ajoute une cellule simple-->
+                    <td>Sonia</td>
+                    <td>Baibou</td>
+                    <td>19/20</td>
+                </tr>
+                <tr>
+                    <td>Php</td> <!-- Ajoute une cellule simple-->
+                    <td>Mathieu</td>
+                    <td>Quittard</td>
+                    <td>20/20</td>
+                </tr>
+           </table>
+
+           <hr>
+
+           <table border="1">
+                <tr>
+                    <th>Matière de l'intervenant</th>
+                    <td>html</td>
+                    <td>Ux-UI design</td>
+                    <td>Javascript</td>
+                    <td>php</td>
+                </tr>
+                <tr>
+                    <th>Prénom</th>
+                    <td colspan="2">Zeineb</td>
+                    <td>Sonia</td>
+                    <td>Mathieu</td>
+                </tr>
+                <tr>
+                    <th>Nom</th>
+                    <td colspan="2">Bapin</td>
+                    <td>Baibou</td>
+                    <td>Quittard</td>
+                </tr>
+                <tr>
+                    <th>Note</th>
+                    <td>15/20</td>
+                    <td>17/20</td>
+                    <td>19/20</td>
+                    <td>20/20</td>
+                </tr>
+           </table>
+       </section>
+    </body>
+</html>
+
+________________--
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+table{
+    margin: 0 auto;
+}
+
+th, td{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th{
+    background-color: violet;
+}
