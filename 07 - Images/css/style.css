@@ -1,5 +1,5 @@
 h1 {
-    font-style: 26px;
+    font-size: 26px;
     text-align: center;
     padding: 20px;
     color: white;
@@ -22,7 +22,7 @@ figure figcaption {
 
 figure figcaption a {
     color: white;
-    font-style: 50px;
+    font-size: 50px;
     text-decoration: none;
 }
 
