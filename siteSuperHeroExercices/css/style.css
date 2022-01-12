@@ -1,0 +1,99 @@
+/*==================== HEADER =========================================*/
+h1, h2 {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 10px;
+    background-color: #0F4667;
+    color: white;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 128, 128);
+    padding: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+header>a:hover {
+    transition: ease-in 500ms;
+    background-color: #008080;
+    color: white;
+}
+
+/*==================== MENU =========================================*/
+ul {
+
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+/*==================== MAIN =========================================*/
+
+article {
+    background-image: url("../image/gotham.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article > p {
+    background-color: white;
+    width: 55%;
+    border-radius: 3px;
+    padding: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+figure {
+    display: flex;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption > h3 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+figcaption > p {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 6%;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer{
+    background-color: #0F4667;
+}
+footer>ul>li>a{
+    color: white;
+}
