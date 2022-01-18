@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#conteneur{
+    width: 1000px;
+    border: 5px solid black;
+    margin: 0 auto; /* si il n'y a pas de widht de definit le margin ne fonctionnera pas
+    */
+}
+
+header{
+    height: 100px;
+    background-color: aquamarine;
+}
+
+nav{
+    height: 30px;
+    background-color: burlywood;
+}
+
+main {
+    margin: 20px;
+}
+
+main>div{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+#a,
+#b,
+#c,
+#d{
+    width: 480px;
+    height: 250px;
+}
+
+#a{
+    background-color: cadetblue;
+}
+#b{
+    background-color: darkseagreen;
+}
+#c{
+    background-color: darkslategray;
+}
+#d{
+    background-color: khaki;
+}
+footer{
+    height: 80px;
+    background-color: aquamarine;
+}
+
+/* DEBUT DU RESPONSIVE ADAPTATIF : MEDIA QUERIES */
+
+@media screen and (max-width:1100px){
+    #conteneur{
+        width: 800px;
+        border: 5px solid red;
+    }
+}
+
+@media screen and (max-width:900px){
+    #conteneur{
+        width: 600px;
+    }
+    #a{
+        background-color: blueviolet;
+    }
+}
+
+/* pour les écrans en dessous de 700px, mettre le conteneur en pleine largeur, et passez les sections les une en dessous des autres. cordialement, la prof. */
+

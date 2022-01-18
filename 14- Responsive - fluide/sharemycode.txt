@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive Adaptatif</title>
+</head>
+<body>
+    <div id="conteneur">
+        <header>
+            <span>Haut</span>
+        </header>
+        <nav>
+            <span>Menu</span>
+        </nav>
+        <main>
+            <div>
+                <section id="a">
+                    <span>A</span>
+                </section>
+                <section id="b">
+                    <span>B</span>
+                </section>
+                <section id="c">
+                    <span>C</span>
+                </section>
+                <section id="d">
+                    <span>D</span>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <span>Bas</span>
+        </footer>
+    </div>
+</body>
+</html>
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#conteneur{
+    width: 1000px;
+    border: 5px solid black;
+    margin: 0 auto; /* si il n'y a pas de widht de definit le margin ne fonctionnera pas
+    */
+}
+
+header{
+    height: 100px;
+    background-color: aquamarine;
+}
+
+nav{
+    height: 30px;
+    background-color: burlywood;
+}
+
+main {
+    margin: 20px;
+}
+
+main>div{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+#a,
+#b,
+#c,
+#d{
+    width: 480px;
+    height: 250px;
+}
+
+#a{
+    background-color: cadetblue;
+}
+#b{
+    background-color: darkseagreen;
+}
+#c{
+    background-color: darkslategray;
+}
+#d{
+    background-color: khaki;
+}
+footer{
+    height: 80px;
+    background-color: aquamarine;
+}
+
+/* DEBUT DU RESPONSIVE ADAPTATIF : MEDIA QUERIES */
+
+@media screen and (max-width:1100px){
+    #conteneur{
+        width: 800px;
+        border: 5px solid red;
+    }
+}
+
+@media screen and (max-width:900px){
+    #conteneur{
+        width: 600px;
+    }
+    #a{
+        background-color: blueviolet;
+    }
+}
+
+
+
+
+/* pour les écrans en dessous de 700px, mettre le conteneur en pleine largeur, et passez les sections les une en dessous des autres. cordialement, la prof. */
+
+@media screen and (max-width:700px){
+    #conteneur{
+        width: 100%;
+        border: 5px solid black;
+    }
+    main>div{
+        display: inherit; /*div herite du display de son parent. son parent c'est main et main est une balise de type block. donc si j'applique le display de main sur div, alors cela revient à annuler le display flex*/
+    }
+
+    main{
+        margin: 0;
+    }
+
+    #a,
+    #b,
+    #c,
+    #d{
+        width: 100%;
+    }
+}
+
+/* Je peux choisir de mettre un min et un max (une tranche) */
+@media screen and (min-width: 741px) and (max-width:780px) {
+    #c{
+        background-color: deeppink;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
