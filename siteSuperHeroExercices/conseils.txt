@@ -60,3 +60,12 @@ Harleen Frances Quinzel de son vrai nom est alors une jeune psychiatre qui trava
 https://fromsmash.com/capturesuiteheros
 https://fromsmash.com/siteheroscaptures
 le lien du sharemycode : https://sharemycode.fr/hkg
+
+
+------------------------------------------------------------
+Corriger - retour
+------------------------------------------------------------
+Gaelle: Visuelle c’est parfait. Bravo Gaelle.
+Il manque les hovers pour les liens. Je déconseille de mettre un titre et texte aussi long dans un figcaption.
+figcaption reste une balise facultative, et juste pour une petite légende liée à l’image.
+Dans ce cas la un bloc (exemple: div ou article) aurait été plus adapté sémantiquement parlant.
