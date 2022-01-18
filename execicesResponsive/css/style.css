@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+header {
+    display: flex;
+}
+
+header div {
+    width: 33.33%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header #logo {
+    background-color: rgb(97, 158, 160);
+}
+
+header #centreHeader {
+    background-color: rgb(15, 139, 139);
+}
+
+header a i.fas {
+    display: none;
+}
+
+header #droiteHeader {
+    background-color: rgb(28, 206, 210);
+}
+
+nav {
+    background-color: rgb(252, 236, 206);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px;
+}
+
+#section1{
+    margin: 15px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#article1, #article2 {
+    width: 50%;
+    height: 300px;
+}
+
+section #article1 {
+    background-color: rgb(170, 169, 169);
+}
+
+section #article2 {
+    background-color: rgb(110, 126, 142);
+}
+
+section #texte {
+    background-color: rgb(176, 223, 230);
+    width: 100vw;
+    height: 150px;
+}
+
+#art1, #art2, #art3, #art4 {
+    width: 25%;
+    height: 400px;
+}
+
+section #art1 {
+    background-color: rgb(135, 206, 234);
+}
+
+section #art2 {
+    background-color: rgb(63, 224, 208);
+}
+
+section #art3 {
+    background-color: rgb(46, 138, 87);
+}
+
+section #art4 {
+    background-color: rgb(150, 250, 152);
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    height: 100px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #footerGauche {
+    background-color: rgb(216, 110, 144);
+}
+
+footer #footerDroit {
+    background-color: rgb(172, 234, 233);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    #logo, #centreHeader{
+        width: 50%;
+    }
+
+    #centreHeader a {
+        position: relative;
+    }
+
+    header #centreHeader a i.fas{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        top: -30px;
+        right: -100px;
+    }
+    #droiteHeader {
+        width: 100%;
+    }
+    nav{
+        display: none;
+    }
+
+    #article1,#article2{
+        width: 100%;
+    }
+
+    #art1, #art2,#art3,#art4{
+        width: 50%;
+    }
+}
