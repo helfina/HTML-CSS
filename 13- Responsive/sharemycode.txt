@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Responsive Adaptatif</title>
 </head>
 <body>
@@ -49,8 +49,7 @@ $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 #conteneur{
     width: 1000px;
     border: 5px solid black;
-    margin: 0 auto; /* si il n'y a pas de widht de definit le margin ne fonctionnera pas
-    */
+    margin: 0 auto;
 }
 
 header{
@@ -115,9 +114,6 @@ footer{
     }
 }
 
-
-
-
 /* pour les écrans en dessous de 700px, mettre le conteneur en pleine largeur, et passez les sections les une en dessous des autres. cordialement, la prof. */
 
 @media screen and (max-width:700px){
@@ -147,6 +143,9 @@ footer{
         background-color: deeppink;
     }
 }
+
+
+
 
 
 
